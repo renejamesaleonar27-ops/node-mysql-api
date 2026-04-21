@@ -4,7 +4,7 @@ import Joi from "joi";
 import validateRequest from "../_middleware/validate-request";
 import authorize from "../_middleware/authorize";
 import Role from "../_helpers/role";
-import accountService from "";
+import accountService from "../accounts/account.service";
 
 // --- ROUTES ---
 router.post("/authenticate", authenticateSchema, authenticate);
